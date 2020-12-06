@@ -1,0 +1,28 @@
+# Canonical rewrite non-www version to www, to avoid duplicate content issues
+# TODO: substitute MYDOMAIN.COM
+
+# Throw a 403 forbidden on common brute force URIs
+# TODO: Uncomment appropriate uris and add more to your liking
+# RedirectMatch 403 ^/admin$
+# RedirectMatch 403 ^/administrator$
+# RedirectMatch 403 ^/wp-admin$
+# RedirectMatch 403 ^/wp-login.php$
+# RedirectMatch 403 ^/install.php$
+# RedirectMatch 403 ^/viewtopic.php$
+
+# Add 301 redirects using wildcard matching
+# RedirectMatch 301 old-news-articles/(.*) /news
+
+# Add 301 literal redirects for mapping old URLs to new ones
+# Redirect 301 /my-old-url /my-new/url
+
+# Pretty URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+# End of Rewrite section
+
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>

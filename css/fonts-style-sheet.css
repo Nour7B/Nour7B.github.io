@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'andrea_bilarosaregular';
+    src: url('../fonts/andrea_bellarosa/andrea_bellarosa-webfont.woff2') format('woff2'),
+         url('../fonts/andrea_bellarosa/andrea_bellarosa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {    
+    font-family: 'clararegular';
+    src: url('../fonts/clara/clara-webfont.woff2') format('woff2'),
+         url('../fonts/clara/clara-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'chiangmai_hostelregular';
+    src: url('../fonts/mathildeetal/chiangmai_hostel-webfont.woff2') format('woff2'),
+         url('../fonts/mathildeetal/chiangmai_hostel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mathilde_castlelanditalic';
+    src: url('../fonts/mathildeetal/mathilde_castleland-webfont.woff2') format('woff2'),
+         url('../fonts/mathildeetal/mathilde_castleland-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
